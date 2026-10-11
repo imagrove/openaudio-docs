@@ -1,0 +1,4 @@
+{
+  "buildCommand": "pip install --break-system-packages 'mkdocs-material>=9.5' && python3 -m mkdocs build",
+  "outputDirectory": "site"
+}

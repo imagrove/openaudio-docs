@@ -21,8 +21,8 @@ mkdocs build
 
 ## 部署
 
-推送到 `main` 后，由 `.github/workflows/deploy.yml` 自动构建并部署到 GitHub Pages。
-在仓库 Settings → Pages 中将 Source 设为 "GitHub Actions"。
+托管在 **Vercel**（团队 `imagroves-projects`）。推送到 `main` 后，由 `.github/workflows/deploy.yml` 经 **Vercel 隧道**方式自动部署（Hobby 计划下组织仓库不走 Git 直连）。
+线上地址：https://openaudio.imagrove.com/docs
 
 ## 目录
 

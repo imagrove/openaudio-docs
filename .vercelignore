@@ -1,0 +1,3 @@
+# Prevent Vercel from misdetecting this as a Python runtime project
+requirements.txt
+site/
