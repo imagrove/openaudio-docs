@@ -14,18 +14,20 @@ theme:
     - search.suggest
     - content.code.copy
   palette:
-    - scheme: default
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
       primary: custom
       accent: custom
       toggle:
         icon: material/weather-night
-        name: 切换深色
-    - scheme: slate
+        name: 切换到深色
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
       primary: custom
       accent: custom
       toggle:
         icon: material/weather-sunny
-        name: 切换浅色
+        name: 切换到浅色
 
 nav:
   - 首页: index.md

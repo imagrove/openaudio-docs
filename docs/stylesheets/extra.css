@@ -1,6 +1,10 @@
-/* Imagrove OpenAudio — 主题色对齐门户站（brand #0d9488 / accent #0ea5e9） */
+/* Imagrove OpenAudio — 文档站主题变量手动对齐门户站（2026-10 一次性对齐）
+ * 门户 tokens 见 openaudio.imagrove.com/index.html 的 :root / @media(dark)。
+ * 注意：本文件为"手动对齐"，日后改色需两端同步；如需机制化见 vercel/token 讨论。 */
 
+/* ================= 亮色（默认） ================= */
 :root {
+  /* 品牌 */
   --md-primary-fg-color:        #0d9488;
   --md-primary-fg-color--light: #14b8a6;
   --md-primary-fg-color--dark:  #0b7a70;
@@ -8,9 +12,24 @@
   --md-primary-bg-color--light: rgba(255, 255, 255, .75);
   --md-accent-fg-color:         #0ea5e9;
   --md-typeset-a-color:         #0b7a70;
+
+  /* 中性 */
+  --md-default-bg-color:            #ffffff;
+  --md-default-bg-color--light:     #f5f8fb;
+  --md-default-bg-color--lighter:   #f5f8fb;
+  --md-default-fg-color:            #0f172a;
+  --md-default-fg-color--light:     #5b6b82;
+  --md-default-fg-color--lighter:   #d3dae6;
+  --md-default-fg-color--lightest:  #e6eaf1;
+
+  /* 代码块（对齐门户：深底浅字） */
+  --md-code-bg-color:           #0f172a;
+  --md-code-fg-color:           #dbe4f0;
 }
 
+/* ================= 暗色（slate） ================= */
 [data-md-color-scheme="slate"] {
+  /* 品牌 */
   --md-primary-fg-color:        #0d9488;
   --md-primary-fg-color--light: #14b8a6;
   --md-primary-fg-color--dark:  #0b7a70;
@@ -18,4 +37,17 @@
   --md-primary-bg-color--light: rgba(255, 255, 255, .75);
   --md-accent-fg-color:         #38bdf8;
   --md-typeset-a-color:         #2dd4bf;
+
+  /* 中性 */
+  --md-default-bg-color:            #0a0f18;
+  --md-default-bg-color--light:     #0f1729;
+  --md-default-bg-color--lighter:   #0f1729;
+  --md-default-fg-color:            #e8eefb;
+  --md-default-fg-color--light:     #95a6bd;
+  --md-default-fg-color--lighter:   #2b3b55;
+  --md-default-fg-color--lightest:  #1e293b;
+
+  /* 代码块 */
+  --md-code-bg-color:           #060b13;
+  --md-code-fg-color:           #d7e3f4;
 }
