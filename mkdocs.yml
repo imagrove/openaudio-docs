@@ -1,0 +1,56 @@
+site_name: Imagrove OpenAudio Documentation
+site_description: ESP32 + Wi-Fi 开源多房间音频系统 — 安装、配置与硬件文档
+site_url: https://openaudio.imagrove.com/docs/
+repo_url: https://github.com/imagrove/openaudio
+repo_name: imagrove/openaudio
+edit_uri: ""
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: teal
+      toggle:
+        icon: material/weather-night
+        name: 切换深色
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: 切换浅色
+
+nav:
+  - 首页: index.md
+  - 快速开始:
+      - 准备工作: getting-started/prerequisites.md
+      - 30 分钟跑通第一个节点: getting-started/quick-start.md
+      - 固件烧录: getting-started/flashing.md
+  - 硬件:
+      - 节点类型总览: hardware/overview.md
+  - 固件:
+      - 配置: firmware/configuration.md
+  - 服务端:
+      - Snapserver 安装: server/snapserver.md
+  - 多房间:
+      - 分区独立播放: multiroom/zones.md
+  - 环绕声:
+      - 5.1 规划与接线: surround/5.1.md
+  - 集成:
+      - Home Assistant: integrations/home-assistant.md
+  - FAQ: faq.md
+  - 许可与合规: legal/licenses.md
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - tables
+  - fenced_code
+
+plugins:
+  - search
